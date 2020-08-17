@@ -229,6 +229,11 @@ body {
     font-weight: 500;
 }
 
+.social-icons-mobile i {
+    padding: 1rem;
+    color: #fff;
+}
+
 /* Header / Landing area */
 /* 
 
