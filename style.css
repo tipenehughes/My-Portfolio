@@ -26,6 +26,10 @@ body {
     background-color: rgb(244, 244, 244);
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
@@ -302,7 +306,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
 }
 
 .lang-icons {
@@ -397,7 +400,7 @@ body {
 .project-overlay {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
@@ -417,11 +420,13 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
+    flex: 1 1 auto;
 }
 
 .project-overlay p {
     font-size: 1.2rem;
     color: #fff;
+    flex: none;
 }
 
 .project-overlay:focus,
@@ -482,7 +487,6 @@ body {
         rgb(232, 234, 241) 100px,
         rgb(232, 234, 241) 50%
     );
-    height: 70vh;
 }
 
 .contact-form {
@@ -593,7 +597,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .container {
-        padding: 0 5% 0 5%;
+        padding: 5% 5% 5% 5%;
     }
     .container:last-child {
         min-height: 50vh;
@@ -652,6 +656,17 @@ footer {
         width: 100%;
         padding: 0.25rem;
         text-align: center;
+    }
+    .project-overlay div a {
+        margin: auto;
+        width: 6rem;
+        height: 2rem;
+        font-size: .7rem;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 2rem;
+        color: #fff;
+        transition: 0.2s ease-in-out;
     }
     .submit {
         text-align: center;

@@ -21,13 +21,19 @@ window.onscroll = function () {
 const mobileMenu = document.getElementById("mobileMenu");
 const menuOverlay = document.querySelector(".mobile-nav-overlay-hidden");
 const menuOptions = document.querySelectorAll(".mobile-menu-item");
+const noscroll = document.querySelector(".noscroll");
+const body = document.getElementById("body");
 
-mobileMenu.addEventListener("click", function () {
+mobileMenu.addEventListener("click", function (e) {
     menuOverlay.classList.toggle("is-visible");
+    body.classList.toggle("noscroll");
 });
 
 for (let i = 0; i < menuOptions.length; i++) {
     menuOptions[i].addEventListener("click", function () {
         menuOverlay.classList.remove("is-visible");
+        if (body.classList.contains("noscroll")) {
+            body.classList.remove("noscroll");
+        }
     });
 }
