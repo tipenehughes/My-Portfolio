@@ -1,0 +1,4 @@
+- Language logos - 
+- Contact Us section sizing - 
+- Form validation
+- Mobile menu load in animations
