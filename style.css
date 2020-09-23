@@ -412,7 +412,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1.2rem;
     color: #fff;
     z-index: 1;
@@ -422,7 +422,7 @@ body {
 }
 
 .project-overlay h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
     flex: 1 1 auto;
@@ -661,6 +661,12 @@ footer {
         width: 100%;
         padding: 0.25rem;
         text-align: center;
+    }
+    .project-overlay p {
+        font-size: 0.8rem;
+    }
+    .project-overlay h3 {
+        font-size: 1.2rem;
     }
     .project-overlay div a {
         margin: auto;
