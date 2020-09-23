@@ -382,7 +382,7 @@ body {
 
 .project {
     padding: 0.5rem;
-    height: 50%;
+    height: 100%;
     flex: 1 1 50%;
 }
 
@@ -429,7 +429,7 @@ body {
 }
 
 .project-overlay p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     flex: none;
 }
@@ -441,7 +441,7 @@ body {
 
 .project-overlay div a {
     display: inline-block;
-    margin: 1rem;
+    margin: 0.5rem;
     width: 9rem;
     height: 3rem;
     font-size: 1.1rem;
@@ -664,12 +664,12 @@ footer {
     }
     .project-overlay div a {
         margin: auto;
-        width: 6rem;
-        height: 2rem;
-        font-size: 0.7rem;
+        width: 7rem;
+        height: 3rem;
+        font-size: 0.9rem;
         border-radius: 4px;
         text-align: center;
-        line-height: 2rem;
+        line-height: 3rem;
         color: #fff;
         transition: 0.2s ease-in-out;
     }
