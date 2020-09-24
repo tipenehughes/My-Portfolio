@@ -275,9 +275,9 @@
                     to reach out below!
                 </p>
                 <div class="contact-form">
-                    <form action="">
+                    <form id="form" method="POST" data-netlify="true">
                         <div class="form">
-                            <div>
+                            <div class="form-control">
                                 <label for="name" class="form-label"></label>
                                 <input
                                     type="text"
@@ -285,19 +285,25 @@
                                     placeholder="Name"
                                     class="form-input"
                                 />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small class="small">Error Message</small>
                             </div>
-                            <div>
+                            <div class="form-control">
                                 <label for="email" class="form-label"
                                     >Email</label
                                 >
                                 <input
-                                    type="text"
+                                    type="email"
                                     id="email"
                                     placeholder="Email"
                                     class="form-input"
                                 />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small class="small">Error Message</small>
                             </div>
-                            <div>
+                            <div class="form-control">
                                 <label for="message" class="form-label"
                                     >Message</label
                                 >
@@ -307,9 +313,18 @@
                                     placeholder="Message"
                                     class="form-input form-textarea"
                                 ></textarea>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small class="small">Error Message</small>
                             </div>
                         </div>
-                        <div class="submit"><input type="submit" /></div>
+                        <div class="submit">
+                            <input
+                                type="submit"
+                                class="form-submit"
+                                id="submitBtn"
+                            />
+                        </div>
                     </form>
                 </div>
             </section>

@@ -507,9 +507,54 @@ body {
     flex-wrap: wrap;
 }
 
+.form-control {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: -12px;
+    left: 4px;
+    visibility: hidden;
+}
+
 .form div {
     width: 50%;
     padding: 0.25rem;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+    border: 2px solid #2ecc71;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+    border: 2px solid #eb2929;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #eb2929;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #eb2929;
 }
 
 /* To move labels offscreen */
@@ -575,6 +620,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgb(232, 234, 241);
+    padding: 1rem;
 }
 
 .footer-icons a i {
