@@ -275,12 +275,18 @@
                     to reach out below!
                 </p>
                 <div class="contact-form">
-                    <form id="form" method="POST" data-netlify="true">
+                    <form
+                        id="form"
+                        method="POST"
+                        name="contact"
+                        data-netlify="true"
+                    >
                         <div class="form">
                             <div class="form-control">
                                 <label for="name" class="form-label"></label>
                                 <input
                                     type="text"
+                                    name="name"
                                     id="name"
                                     placeholder="Name"
                                     class="form-input"
@@ -295,6 +301,7 @@
                                 >
                                 <input
                                     type="email"
+                                    name="email"
                                     id="email"
                                     placeholder="Email"
                                     class="form-input"
