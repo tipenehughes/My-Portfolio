@@ -18,8 +18,8 @@
 }
 
 body {
-    background: url("/img/bg.svg") no-repeat, url("/img/bg2.svg") no-repeat,
-        url("/img/bg3.svg") no-repeat, url("/img/bg4.svg") no-repeat;
+    background: url("/img/svg/bg.svg") no-repeat, url("/img/svg/bg2.svg") no-repeat,
+        url("/img/svg/bg3.svg") no-repeat, url("/img/svg/bg4.svg") no-repeat;
     background-position: top -25px left -550px, top -400px right -550px,
         top 800px right -600px, top 1300px left -450px;
     background-size: 800px;
@@ -361,7 +361,7 @@ body {
 
 */
 .portfolio {
-    background: url("/img/bg5.svg") no-repeat;
+    background: url("/img/svg/bg5.svg") no-repeat;
     background-position: top 300px right -350px;
     background-size: 700px;
     display: flex;
