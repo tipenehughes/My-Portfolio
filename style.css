@@ -18,8 +18,9 @@
 }
 
 body {
-    background: url("/img/svg/bg.svg") no-repeat, url("/img/svg/bg2.svg") no-repeat,
-        url("/img/svg/bg3.svg") no-repeat, url("/img/svg/bg4.svg") no-repeat;
+    background: url("/img/svg/bg.svg") no-repeat,
+        url("/img/svg/bg2.svg") no-repeat, url("/img/svg/bg3.svg") no-repeat,
+        url("/img/svg/bg4.svg") no-repeat;
     background-position: top -25px left -550px, top -400px right -550px,
         top 800px right -600px, top 1300px left -450px;
     background-size: 800px;
@@ -126,12 +127,26 @@ body {
     text-align: left;
 }
 
+.nav-page li ::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px var(--underline-color);
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.nav-page li :hover:after {
+    transform: scaleX(0.6);
+}
+
 .nav-page li a {
     display: inline-block;
     width: 50%;
     height: auto;
     font-size: 1.2rem;
     font-weight: 400;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-bar li a:focus,
@@ -285,6 +300,12 @@ body {
     font-size: 1.1rem;
     color: #fff;
     border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.welcome a:hover {
+    box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.7);
+    transition: all 0.2s ease-in-out;
 }
 
 .avatar {
@@ -418,7 +439,7 @@ body {
     z-index: 1;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.45s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .project-overlay h3 {
